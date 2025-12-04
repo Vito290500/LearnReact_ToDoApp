@@ -1,0 +1,42 @@
+.TodoFormModal{
+    width: 550px;
+    height: 340px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    gap: 20px;
+    padding: 20px;
+    background-color: #393E46;
+}
+.TodoFormModal_Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.TodoFormModal_Header h3{
+    font-size: 25px;
+}
+.InputContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.TodoFormModal input{
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    color: black;
+}

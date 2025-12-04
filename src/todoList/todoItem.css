@@ -1,0 +1,59 @@
+.todoItem{
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 5% 30% 20% 15% 15% 20%;
+    padding: 10px 20px;
+}
+.todoItem p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.todoItem p:first-of-type{
+  font-style: italic;
+  font-weight: 600;
+}
+.todoItem div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.todoItem button{
+    background: none;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px 2px rgba(128, 128, 128, 0.415);
+    outline: none;
+}
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.checkboxWrapper input {
+  display: none; 
+}
+.customCheck {
+  width: 30px;
+  height: 30px;
+  box-shadow: 2px 2px 8px 2px rgba(128, 128, 128, 0.415);
+  border-radius: 4px;
+  display: inline-block;
+  transition: 0.2s;
+  position: relative;
+}
+.checkboxWrapper input:checked + .customCheck {
+  background-color: #F96D00; 
+  border-color: #F96D00;
+}
+.checkboxWrapper input:checked + .customCheck::after {
+  content: '✓';
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  left: 5px;
+  top: -5px;
+}
