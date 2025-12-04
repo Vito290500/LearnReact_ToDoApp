@@ -25,5 +25,5 @@ Ideale per imparare a lavorare con componenti, props, state e gestione di liste 
 
 ---
 
-## Struttura del progetto
+
 
